@@ -1,0 +1,51 @@
+version: "3.1"
+
+intents:
+  - greeting
+  - goodbye
+  - help
+  - team_task
+  - refresh
+  - initiati_workflow
+  - flow_ACL
+  - field_optimist_tidak_terisi
+  - debitur_cash_collateral
+  - CRG
+  - commercial_credit_application_process_flow
+  - BTB
+  - aktivasi_user_ID
+
+responses:
+  utter_greeting:
+    - text: "Halo! Ada yang bisa saya bantu?"
+  utter_goodbye:
+    - text: "Terimakasih telah menggunakan chatbot ini!"
+  utter_help:
+    - text: "Apa yang bisa aku bantu?"
+  utter_teamtask:
+    - text: "Sesama Analyst dapat melakukan team task dengan cara asign to analyst yaaaa"
+    - text: "antara analyst bisa saling memberikan task yaa"
+    - text: "antar analyst bisa saling memberikan task tanpa perlu bantuan dari tim acl yaa"
+  utter_refresh:
+    - text: "Kamu dapat melakukan refresh aplikasi melalui WF Exception Management yaa"
+  utter_initiatewf:
+    - text: "Sebelum RM initiati workflow manual group exposure wajib diisi terlebih dahulu yaa:) manual group exposure diisi sesuai dengan limit pengajuan debitur yang disesuaikan dengan limit yang ada pada product structure, dan apabila nasabah grouping, limit yang diisi disesuaikan dengan limit masing masing group debitur. untuk memastikan approvalnya sesuai bisa dilihat di tabel manual group exposure & field group exposure amount manual (idr)"
+  utter_flowacl:
+    - text: "Step 1: Business Approval Process 🔹 RM & Analyst (Financial Spreading) 🔹 Review GAM* 🔹 Review Product Team* 🔹 Review Business Head (Business Approval Step 1) 🔹 Review Senior Credit Analyst* (Business Approval Step 2) 🔹 Review Div Head (Business Approval Step 3*) Step 2: Credit Risk Review 🔹 Credit Risk (Risk Admin, Reviewer, DSCO*, SCO*, CCO*) 🔹 Final Approver & Risk Recommender Review (Chief of Commercial or Bank-wide CC*) 🔹 Clean Up by Credit Risk (Reviewer)* 🔹 Clean Up by Credit Analyst (RM After Clean Up) Step 3: Legal & Non-Legal Documentation 🔹 LOO Preparation 🔹 Credit & Collateral Agreement Preparation 🔹 SCC Preparation 🔹 CRC Covenant Documentation 🔹 SCC Review 🔹 Limit Setting"
+  utter_fieldoptimist:
+    - text: "Terkait Field yang tidak dapat diisi itu kamu dapat daftar akses Optimist terlebih dahulu via ams portal ya, dengan reason penambahan role panambahan portfolio user id"
+  utter_dcc:
+    - text: "kamu harus tetap input Financial Spreading, karena akan berimpact ke WF yang tidak bisa di end task apabila CRG tidak direfresh."
+  utter_crg:
+    - text: "lakukan refresh crg terlebih dahulu, sebelum melakukan select CRGnya yaaa."
+  utter_ccapf:
+    - text: "CFR PREPARATION •	CFR Pack Preparation (Upload) •	Supplemental Information •	Term Sheet •	Call Meme •	Any Supporting Doc. •	Review GAM * •	Review Product Team * •	Review Business Approval Step 1, Step 2 & Step 3 (L2, Senior CA** & L1*) RISK REVIEW & APPROVAL •	Credit Risk •	Risk Recommender Review •	Commercial Head /CoB or Bank-wide CC * •	Signing Preparation •	IDS Issue to CRC •	Clean Up by Risk Reviewer •	Limit Setting •	RM after Clean Up Assign Task to Analyst for Clean up POST APPROVAL •	Legal & Non Legal Document Preparation •	Issue LOG from CRC Legal Order •	SCC Issuance COVENANT & DISBURSEMENT •	Business as Usual (Outside ACL) •	Covenant Submission •	Disbursement Condition"
+  utter_btb:
+    - text: "khusus untuk btb / back to back tidak perlu masuk ke analyst ya"
+  utter_aktivasiuid:
+    - text: "Kamu harus melakukan activasi user id terlebih dahulu visa ams yaaa"
+  utter_fallback:
+    - text: "Maaf, saya kurang mengerti. Bisa dijelaskan lagi?"
+
+actions:
+  - action_new_chat

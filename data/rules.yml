@@ -1,0 +1,72 @@
+version: "3.1"
+
+rules:
+  - rule: greet user anytime
+    steps:
+      - intent: greeting
+      - action: utter_greeting
+
+  - rule: say goodbye anytime
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: help user anytime
+    steps:
+      - intent: help
+      - action: utter_help
+
+  - rule: handle team task assignment
+    steps:
+      - intent: team_task
+      - action: utter_teamtask
+
+  - rule: handle application refresh
+    steps:
+      - intent: refresh
+      - action: utter_refresh
+
+  - rule: handle initiate workflow
+    steps:
+      - intent: initiati_workflow
+      - action: utter_initiatewf
+
+  - rule: handle flow ACL process
+    steps:
+      - intent: flow_ACL
+      - action: utter_flowacl
+
+  - rule: handle field optimist tidak terisi
+    steps:
+      - intent: field_optimist_tidak_terisi
+      - action: utter_fieldoptimist
+
+  - rule: handle debitur cash collateral
+    steps:
+      - intent: debitur_cash_collateral
+      - action: utter_dcc
+
+  - rule: handle CRG refresh
+    steps:
+      - intent: CRG
+      - action: utter_crg
+
+  - rule: handle commercial credit application process flow
+    steps:
+      - intent: commercial_credit_application_process_flow
+      - action: utter_ccapf
+
+  - rule: handle back to back process
+    steps:
+      - intent: BTB
+      - action: utter_btb
+
+  - rule: handle user ID activation
+    steps:
+      - intent: aktivasi_user_ID
+      - action: utter_aktivasiuid
+
+  - rule: Fallback rule
+    steps:
+      - intent: nlu_fallback
+      - action: utter_fallback

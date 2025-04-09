@@ -1,0 +1,63 @@
+{
+  "type": "MaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "BTB": 0,
+        "CRG": 1,
+        "aktivasi_user_ID": 2,
+        "back": 3,
+        "commercial_credit_application_process_flow": 4,
+        "debitur_cash_collateral": 5,
+        "field_optimist_tidak_terisi": 6,
+        "flow_ACL": 7,
+        "goodbye": 8,
+        "greeting": 9,
+        "help": 10,
+        "initiati_workflow": 11,
+        "nlu_fallback": 12,
+        "out_of_scope": 13,
+        "refresh": 14,
+        "restart": 15,
+        "session_start": 16,
+        "team_task": 17
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "action_new_chat": 13,
+        "utter_aktivasiuid": 14,
+        "utter_btb": 15,
+        "utter_ccapf": 16,
+        "utter_crg": 17,
+        "utter_dcc": 18,
+        "utter_fieldoptimist": 19,
+        "utter_flowacl": 20,
+        "utter_goodbye": 21,
+        "utter_greeting": 22,
+        "utter_help": 23,
+        "utter_initiatewf": 24,
+        "utter_refresh": 25,
+        "utter_teamtask": 26
+      },
+      "entities": {},
+      "slots": {},
+      "active_loop": {}
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": 5
+}

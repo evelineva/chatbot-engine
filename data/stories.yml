@@ -1,0 +1,68 @@
+version: "3.1"
+
+stories:
+  - story: greet user
+    steps:
+      - intent: greeting
+      - action: utter_greeting
+
+  - story: user says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: user asks for help
+    steps:
+      - intent: help
+      - action: utter_help
+
+  - story: team task assignment
+    steps:
+      - intent: team_task
+      - action: utter_teamtask
+
+  - story: refresh application
+    steps:
+      - intent: refresh
+      - action: utter_refresh
+
+  - story: initiate workflow
+    steps:
+      - intent: initiati_workflow
+      - action: utter_initiatewf
+
+  - story: flow ACL process
+    steps:
+      - intent: flow_ACL
+      - action: utter_flowacl
+
+  - story: field optimist tidak terisi
+    steps:
+      - intent: field_optimist_tidak_terisi
+      - action: utter_fieldoptimist
+
+  - story: debitur cash collateral
+    steps:
+      - intent: debitur_cash_collateral
+      - action: utter_dcc
+
+  - story: CRG refresh
+    steps:
+      - intent: CRG
+      - action: utter_crg
+
+  - story: commercial credit application process flow
+    steps:
+      - intent: commercial_credit_application_process_flow
+      - action: utter_ccapf
+
+  - story: back to back process
+    steps:
+      - intent: BTB
+      - action: utter_btb
+
+  - story: user ID activation
+    steps:
+      - intent: aktivasi_user_ID
+      - action: utter_aktivasiuid
+

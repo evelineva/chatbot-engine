@@ -1,0 +1,47 @@
+{
+  "text": {
+    "halo": 6,
+    "hai": 5,
+    "selamat": 14,
+    "pagi": 11,
+    "apa": 0,
+    "kabar": 9,
+    "sampai": 12,
+    "jumpa": 8,
+    "dadah": 3,
+    "tinggal": 16,
+    "itu": 7,
+    "chatbot": 2,
+    "yang": 17,
+    "bisa": 1,
+    "saya": 13,
+    "lakukan": 10,
+    "di": 4,
+    "sini": 15
+  },
+  "intent": {
+    "greeting": 2,
+    "goodbye": 1,
+    "faq": 0
+  },
+  "response": null,
+  "action_name": {
+    "action_listen": 6,
+    "action_restart": 7,
+    "action_session_start": 9,
+    "action_default_fallback": 4,
+    "action_deactivate_loop": 1,
+    "action_revert_fallback_events": 8,
+    "action_default_ask_affirmation": 2,
+    "action_default_ask_rephrase": 3,
+    "action_two_stage_fallback": 10,
+    "action_unlikely_intent": 11,
+    "action_back": 0,
+    "action_extract_slots": 5,
+    "utter_faq": 12,
+    "utter_goodbye": 13,
+    "utter_greeting": 14
+  },
+  "action_text": null,
+  "intent_response_key": null
+}
