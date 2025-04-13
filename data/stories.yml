@@ -66,3 +66,7 @@ stories:
       - intent: aktivasi_user_ID
       - action: utter_aktivasiuid
 
+  - story: show group
+    steps:
+      - intent: show_group
+      - action: utter_showgroup

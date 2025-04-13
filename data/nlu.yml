@@ -96,3 +96,9 @@ nlu:
   examples: |
     - mengapa pada portfolio name, business segment & RM branch pada saat di klik di tanda panah tidak muncul pilihan apapun?
     - mengapa tidak muncul pilihan apapun pada portfolio name, business segment & RM branch pada saat di klik di tanda panah?
+
+- intent: show_group
+  examples: |
+    - Bagaimana cara saya melihat group yang terdaftar pada nasabah?
+    - saya ingin melihat group yang terdaftar pada nasabah gimana caranya?
+    - apakah saya bisa melihat group yang terdaftar pada nasabah?

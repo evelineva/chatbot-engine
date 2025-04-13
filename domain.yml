@@ -14,6 +14,7 @@ intents:
   - commercial_credit_application_process_flow
   - BTB
   - aktivasi_user_ID
+  - show_group
 
 responses:
   utter_greeting:
@@ -44,6 +45,8 @@ responses:
     - text: "khusus untuk btb / back to back tidak perlu masuk ke analyst ya"
   utter_aktivasiuid:
     - text: "Kamu harus melakukan activasi user id terlebih dahulu visa ams yaaa"
+  utter_showgroup:
+    - text: "Tentu, Cara untuk melihat group nasabah adalah dengan checklist show group di aplikasi acl nasabah yaa"
   utter_fallback:
     - text: "Maaf, saya kurang mengerti. Bisa dijelaskan lagi?"
 

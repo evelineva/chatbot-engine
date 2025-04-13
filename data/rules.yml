@@ -65,6 +65,11 @@ rules:
     steps:
       - intent: aktivasi_user_ID
       - action: utter_aktivasiuid
+  
+  - rule: handle show grouping
+    steps:
+      - intent: show_group
+      - action: utter_showgroup
 
   - rule: Fallback rule
     steps:
