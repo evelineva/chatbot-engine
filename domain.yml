@@ -16,6 +16,25 @@ intents:
   - aktivasi_user_ID
   - show_group
 
+entities:
+  - user_name
+  - acl_number
+  - company_name
+
+slots:
+  user_name:
+    type: text
+    mappings:
+      - type: from_text
+  acl_number:
+    type: text
+    mappings:
+      - type: from_text
+  company_name:
+    type: text
+    mappings:
+      - type: from_text
+
 responses:
   utter_greeting:
     - text: "Halo! Ada yang bisa saya bantu?"
@@ -24,9 +43,9 @@ responses:
   utter_help:
     - text: "Apa yang bisa aku bantu?"
   utter_teamtask:
-    - text: "Sesama Analyst dapat melakukan team task dengan cara asign to analyst yaaaa"
-    - text: "antara analyst bisa saling memberikan task yaa"
-    - text: "antar analyst bisa saling memberikan task tanpa perlu bantuan dari tim acl yaa"
+    - text: "Sesama Analyst dapat melakukan team task dengan cara asign to analyst yaaaa. Tapi kalau kamu bukan analyst kamu bisa request helpdesk action yaa di menu request hdaction"
+    - text: "antara analyst bisa saling memberikan task yaa. Tapi kalau kamu bukan analyst kamu bisa request helpdesk action yaa di menu request hdaction"
+    - text: "antar analyst bisa saling memberikan task tanpa perlu bantuan dari tim acl yaa. Tapi kalau kamu bukan analyst kamu bisa request helpdesk action yaa di menu request hdaction"
   utter_refresh:
     - text: "Kamu dapat melakukan refresh aplikasi melalui WF Exception Management yaa"
   utter_initiatewf:

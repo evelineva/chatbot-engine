@@ -3,16 +3,32 @@ version: "3.1"
 nlu:
 - intent: greeting
   examples: |
-    - Halo
-    - Hai
-    - Selamat pagi
-    - Apa kabar?
+    - halo bot
+    - hey
+    - selamat siang
+    - selamat sore
+    - selamat malam
+    - selamat pagi
+    - hai
+    - hi
+    - halo
+    - hellow
+    - assalamualaikum
+    - pagi
+    - hai, ada yang bisa dibantu?
+
 
 - intent: goodbye
   examples: |
     - Sampai jumpa
     - Dadah
     - Selamat tinggal
+    - sampai ketemu lagi
+    - bye
+    - dadah dulu ya
+    - saya pamit ya
+    - terima kasih, saya logout dulu
+
 
 - intent: help
   examples: |
@@ -21,23 +37,45 @@ nlu:
     - bantuin dong
     - tolongin dong
     - bantu dong
+    - bisa bantu saya?
+    - perlu bantuan nih
+    - saya butuh bantuan
+    - ada yang bisa bantu?
+    - boleh minta bantuan?
+
 
 - intent: team_task
   examples: |
-    - pindahkan acl ke user xxx dong
-    - ACL no. XXX bisa pindahkan ke user XXX, karena ACL disend back Kembali ke XXX lagi.
-    - Mohon bantuannya agar dapat dipindahkan ACL atas nama XXX di bawah ini ke CCA XXX ya
-    - Mohon bantuannya agar dapat dipindahkan ACL an XXX di bawah ini ke CCA XXX ya
-    - Mohon dibantu untuk ACL no. XXX bisa dipindahkan ke user XXX, karena ACL disend back Kembali ke XXX lagi
-    - Mohon bantuan untuk mengembalikan part ACL ino PT XXX ke team analis
+    - pindahkan ACL ke user [Budi](user_name) dong
+    - ACL no. [123456](acl_number) bisa dipindahkan ke user [Rina](user_name), karena ACL disend back ke [Rina](user_name) lagi
+    - Mohon bantuannya agar dapat dipindahkan ACL atas nama [Sinta](user_name) ke CCA [Bayu](user_name)
+    - Mohon bantuannya agar dapat dipindahkan ACL an [Doni](user_name) di bawah ini ke CCA [Ayu](user_name)
+    - Mohon dibantu untuk ACL no. [789101](acl_number) bisa dipindahkan ke user [Sari](user_name), karena ACL disend back kembali ke [Sari](user_name) lagi
+    - Mohon bantuan untuk mengembalikan part ACL ino PT [XYZ Finance](company_name) ke team analis
+    - Bisa bantu pindahkan ACL nomor [456789](acl_number) ke user [Andi](user_name)?
+    - ACL [654321](acl_number) atas nama [Lina](user_name) mohon dipindahkan ke [Tono](user_name)
+    - tolong pindahin ACL ke user [Rina](user_name) ya
+    - ACL atas nama [Rina](user_name) tolong dipindah ke CCA [Rina](user_name)
+    - bisa bantu pindahin ACL ke tim analis?
+    - minta tolong ACL user [Rina](user_name) dipindahin ke [Rina](user_name)
+    - mohon proses ACL ini agar pindah ke user [Rina](user_name)
+
 
 - intent: refresh
   examples: |
-    - Nama : PT XXX No ACL Cust : XXX No ACL Workflow : XXX Workflow ACL tidak berjalan ke GAM Approval Hal ini terjadi karena ada perubahan Business Segment dan sudah diperbaiki di Level WB Customer
-    - Mohon informasi nya untuk stage ACL PT XXX, bahwa sudah di approve oleh Pak XXX namun ACL belum masuk ke stage RISK
-    - ACL PT XXX, sudah di end task ACL untuk approval process tapi dari kemarin masih di RM.
+    - Nama: PT [Garuda Abadi](company_name) No ACL Cust: [332211](acl_number) No ACL Workflow: [445566](acl_number), Workflow ACL tidak berjalan ke GAM Approval Hal ini terjadi karena ada perubahan Business Segment dan sudah diperbaiki di Level WB Customer
+    - Mohon informasi untuk stage ACL PT [Karya Bersama](company_name), bahwa sudah di-approve oleh Pak [Didi](user_name), namun ACL belum masuk ke stage RISK
+    - ACL PT [Inovasi Jaya](company_name), sudah di end task ACL untuk approval process tapi dari kemarin masih di RM
+    - ACL no. [998877](acl_number) stuck di workflow
+    - aplikasi [ACL 112233](acl_number) stuck
     - tidak berpindah
-    - aplikasi stuck
+    - kenapa workflow-nya gak jalan?
+    - ACL saya stuck di approval
+    - workflow gak gerak-gerak
+    - flow macet di RM
+    - status gak berubah padahal udah approve
+    - ACL mandek di stage ini
+
 
 - intent: initiati_workflow
   examples: |
@@ -47,6 +85,12 @@ nlu:
     - saya ingin initiati workflow
     - initiati workflow
     - apa aja yg perlu diperhatikan pada saat ingin initiati workflow
+    - mau mulai workflow dong
+    - gimana cara mulai initiati workflow?
+    - saya perlu initiati proses ACL
+    - tolong bantu inisiasi ACL
+    - bisa tolong inisiasi workflow?
+
   
 - intent: flow_ACL
   examples: |
@@ -56,6 +100,12 @@ nlu:
     - minta bantuannya untuk menjelaskan flow acl
     - bagaimana alur kerja ACL
     - alur acl
+    - bisa dijelaskan alur ACL?
+    - urutan proses ACL itu gimana?
+    - gimana tahapan workflow ACL?
+    - proses kerja ACL kayak gimana?
+    - step-step ACL tolong jelasin dong
+
 
 - intent: field_optimist_tidak_terisi
   examples: |
@@ -64,6 +114,11 @@ nlu:
     - saya ingin mengisi field optimist tapi gabisa
     - kok gabisa diisi ya field optimistnya
     - tdk bs diisi field optimist nya
+    - optimist fieldnya kok kosong?
+    - kenapa optimist ga bisa diedit?
+    - saya coba isi optimist, tapi ga muncul
+    - field optimistnya error ya?
+    - ko field optimist gak aktif?
 
 - intent: debitur_cash_collateral
   examples: |
@@ -71,6 +126,11 @@ nlu:
     - perlu jalanin crg ga di debitur cash collateral
     - crg perlu ga di dcc
     - crg perlu di run tidak terkait debitur cash collateral (md 100%)
+    - apakah perlu CRG untuk cash collateral?
+    - DCC perlu jalanin CRG gak sih?
+    - kalau debitur cash collateral, harus CRG juga?
+    - MD 100% tetap perlu CRG?
+
 
 - intent: CRG
   examples: |
@@ -78,6 +138,12 @@ nlu:
     - saya ingin melakukan select crg kok gabisa ya?
     - eror saat ingin select crg
     - kenapa eror pada saat select crg
+    - error saat pilih CRG
+    - gagal saat select CRG
+    - CRG yang muncul salah
+    - gak bisa ganti CRG
+    - kenapa pilihan CRG-nya gak update?
+
 
 - intent: commercial_credit_application_process_flow
   examples: |
@@ -86,19 +152,38 @@ nlu:
     - alur commercial credit application gmn?
     - alur commercial credit application bagaimana?
     - alur proses untuk commercial credit application gimana?
+    - tolong tunjukkan alur commercial credit
+    - proses aplikasi kredit komersial bagaimana?
+    - step-by-step aplikasi kredit gimana?
+    - prosedur pengajuan kredit komersial gimana?
+    - saya ingin tahu proses commercial credit
 
 - intent: BTB
   examples: |
     - apakah back to back perlu masuk ke analyst
     - Apakah BTB perlu Masuk Ke analyst
+    - back-to-back perlu approval analis ga?
+    - BTB harus lewat analis juga ya?
+    - proses BTB perlu input analis kah?
+    - apakah semua BTB harus masuk analyst?
 
 - intent: aktivasi_user_ID
   examples: |
     - mengapa pada portfolio name, business segment & RM branch pada saat di klik di tanda panah tidak muncul pilihan apapun?
     - mengapa tidak muncul pilihan apapun pada portfolio name, business segment & RM branch pada saat di klik di tanda panah?
+    - data di dropdown tidak muncul
+    - kenapa isian portfolio name kosong?
+    - pilihan RM branch-nya gak keluar
+    - gak bisa klik pilihan di RM branch
+    - saya klik dropdown tapi kosong
 
 - intent: show_group
   examples: |
     - Bagaimana cara saya melihat group yang terdaftar pada nasabah?
     - saya ingin melihat group yang terdaftar pada nasabah gimana caranya?
     - apakah saya bisa melihat group yang terdaftar pada nasabah?
+    - bagaimana cara cek group nasabah?
+    - bisa lihat group nasabah di mana?
+    - info group nasabah ada di mana ya?
+    - saya mau lihat group customer
+    - di mana saya bisa akses info grup nasabah?
