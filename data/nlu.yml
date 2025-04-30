@@ -28,6 +28,9 @@ nlu:
     - dadah dulu ya
     - saya pamit ya
     - terima kasih, saya logout dulu
+    - terima kasih
+    - thank you
+    - terimakasih
 
 
 - intent: help
