@@ -67,7 +67,7 @@ responses:
   utter_showgroup:
     - text: "Tentu, Cara untuk melihat group nasabah adalah dengan checklist show group di aplikasi acl nasabah yaa"
   utter_fallback:
-    - text: "Maaf, saya kurang mengerti. Bisa dijelaskan lagi?"
+    - text: "Maaf, saya kurang mengerti. Bisa dijelaskan lagi?, atau jika kamu membutuhkan request helpdesk action kamu bisa langsung ke menu request hd-actions ya:)"
 
 actions:
   - action_new_chat
