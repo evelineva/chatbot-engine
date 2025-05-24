@@ -1,5 +1,5 @@
 # Gunakan image resmi dari Rasa
-FROM rasa/rasa:3.6.10
+FROM rasa/rasa:3.1
 
 # Atur working directory
 WORKDIR /app
